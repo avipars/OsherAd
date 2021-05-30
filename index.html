@@ -16,13 +16,14 @@
 		{{#each this as |landmark|}}
 			<li class="list-group-item list-group-item-action {{#if this.isSelected}}active{{/if}}" onclick="selectLandmark({{landmark.id}});">
 				<div class="media">
-					<img src="{{landmark.imageUrl}}" class="mr-3 thumbnail">
+					<img src="{{landmark.imageUrl}}" class="mr-3 thumbnail" onerror="if (this.src != 'default.jpg') this.src = 'default.jpg';">
 					<div class="media-body">
 						<h5 class="m-0">{{landmark.name}}</h5>
 						<p class="m-0">{{landmark.location}}</p>
 						{{#if landmark.isSelected}}
 							<p>{{landmark.description}}</p>
-							<p class="m-0">{{landmark.phone}}</p>
+							<p>Phone: {{landmark.phone}}</p>
+							<!-- <p>Phone Number: <a href="{{landmark.phone}}">{{landmark.phone}}</a></p> -->
 						{{else}}
 							<p class="text-muted">{{landmark.shortDescription}}...</p>
 						{{/if}}
@@ -53,4 +54,5 @@
 		<div class="col-md-8" id="map-container"></div>
 	</div>
 </body>
+
 </html>

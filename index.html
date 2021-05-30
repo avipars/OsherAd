@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Landmarks</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<script src="main.js"></script>
-<script id="list-template" type="text/x-handlebars-template">
-	<h4 class="p-4 border-bottom mb-0">UK Beauty Spots</h4>
+	<title>Osher Ad Branches</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="main.js"></script>
+	<script id="list-template" type="text/x-handlebars-template">
+	<h4 class="p-4 border-bottom mb-0">Osher Ad Branches</h4>
 	<ul class="list-group list-group-flush">
 		{{#each this as |landmark|}}
 			<li class="list-group-item list-group-item-action {{#if this.isSelected}}active{{/if}}" onclick="selectLandmark({{landmark.id}});">
@@ -17,8 +19,10 @@
 					<img src="{{landmark.imageUrl}}" class="mr-3 thumbnail">
 					<div class="media-body">
 						<h5 class="m-0">{{landmark.name}}</h5>
+						<p class="m-0">{{landmark.location}}</p>
 						{{#if landmark.isSelected}}
 							<p>{{landmark.description}}</p>
+							<p class="m-0">{{landmark.phone}}</p>
 						{{else}}
 							<p class="text-muted">{{landmark.shortDescription}}...</p>
 						{{/if}}
@@ -28,7 +32,7 @@
 		{{/each}}
 	</ul>
 </script>
-<script id="map-template"  type="text/x-handlebars-template">
+	<script id="map-template" type="text/x-handlebars-template">
 <iframe
 	class="map"
 	frameborder="0" style="border:0"
@@ -36,6 +40,7 @@
 </iframe>
 </script>
 </head>
+
 <body>
 	<div class="row row-full-height no-gutters">
 		<div class="col-md-4" id="list-container">
@@ -44,7 +49,7 @@
 					<span class="sr-only">Loading...</span>
 				</div>
 			</div>
-		</div>	
+		</div>
 		<div class="col-md-8" id="map-container"></div>
 	</div>
 </body>

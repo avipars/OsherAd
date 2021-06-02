@@ -1,15 +1,17 @@
 Osher Ad Locations and Information
 
-I get asked all the time about when Osher ad (grocery store chain) opens and information about their branches, so i put this together
+I get asked all the time about when Osher ad (grocery store chain) opens and information about their branches, so I put this together
+
+The site is open sourced and waiting for your contributions including SEO, UI, UX, localization, and improving information. 
 
 
-Site - 
+Live Demo - 
 https://avipars.github.io/OsherAd/test.html
 
-Google Sheets - 
+Information Source (Google Sheets) - 
 https://docs.google.com/spreadsheets/d/19y60KZ3D9FzxoET6RJ1CRXlG6_sQj3vM_r3pa4H5IwU/edit?usp=sharing
 
-Osher Ad Telegram - 
+Osher Ad Telegram Channel- 
 https://t.me/osheradnews
 
 Google My Places - 

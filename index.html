@@ -1,16 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="refresh" content="5; URL='https://avipars.github.io/OsherAd/test.html'" />
-        <title>Osher Ad - All Locations</title>
-        <!-- <script src="/UnitOf.min.js"></script> -->
-    </head>
-    <body>
-        <p>If you are not redirected in five seconds, <a href="https://avipars.github.io/OsherAd/test.html">click here</a>.</p>
-    </body>
-    <footer>
-        <p>&copy; 2021 unitMeasure</p>
-    </footer>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Osher Ad Branches - all the locations in Israel</title>
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="The unofficial website of Osher Ad - we provide you information about all the branches throughout the country. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="icons/mainpreview.jpg" />
+  <meta property="og:title" content="Osher Ad Branches - all the locations in Israel" />
+  <meta property="og:description"
+    content="The unofficial website of Osher Ad - we provide you information about all the branches throughout the country. " />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="datatable.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8"
+    src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/site.webmanifest">
+</head>
+
+<body>
+
+  <h1 class="p-4 mb-0 center">Osher Ad אושר עד</h1>
+  <p class="border-bottom center">All the locations/branches in Israel כל הסניפים בארץ</p>
+
+  <br> 
+  <div class="container" id="locations">
+    <table id="locationTable" class="table table-striped table-bordered" style="width:100%">
+      <thead>
+        <tr>
+          <th>Name שם</th>
+          <th>Location מקום</th>
+          <th>Description מידע נוסף</th>
+          <th>Phone טלפון</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bet Shemesh בית שמש</td>
+          <td>Naimi Mall, HaGalil St 1, Bet Shemesh</td>
+          <td>Within the naimi mall, take the elevator</td>
+          <td>02-6508504</td>
+        </tr>
+        <tr>
+          <td>Jerusalem - Romema רוממה</td>
+          <td>Shamgar St 16, Jerusalem</td>
+          <td>Below the shamgar mall</td>
+          <td>076-8845535</td>
+        </tr>
+        <tr>
+          <td>Jerusalem - Hadar Mall קניון הדר</td>
+          <td>Ha-Rekhavim St 8, Jerusalem</td>
+          <td>At the back of the mall</td>
+          <td>02-6511900</td>
+        </tr>
+        <tr>
+          <td>Jerusalem - Givat Shaul גבעת שאול</td>
+          <td>Beit Ha-Defus St 29, Jerusalem</td>
+          <td></td>
+          <td>02-6511900</td>
+        </tr>
+        <tr>
+          <td>Tel Aviv תל אביב</td>
+          <td>Walter Moses St 6, Tel Aviv-Yafo</td>
+          <td></td>
+          <td>076-8899905</td>
+        </tr>
+        <tr>
+          <td>Be'er Sheva באר שבע</td>
+          <td>Ha-Kotser St 15, Be'er Sheva</td>
+          <td></td>
+          <td>08-9398944</td>
+        </tr>
+        <tr>
+          <td>Lod לוד</td>
+          <td>Bat Sheva St 1, Lod</td>
+          <td></td>
+          <td>08-8655490</td>
+        </tr>
+        <tr>
+          <td>Gedera - Kanot גדרה - קנות</td>
+          <td>Adom St 24, Gedera</td>
+          <td></td>
+          <td>08-6491205</td>
+        </tr>
+        <tr>
+          <td>Petach Tikva - Segula פתח תקווה</td>
+          <td>Ben Tsiyon Galis St 30, Petah Tikva</td>
+          <td></td>
+          <td>03-6129437</td>
+        </tr>
+        <tr>
+          <td>Hadera חדרה</td>
+          <td>פינת, האומן פינת, HaMasger St, Hadera</td>
+          <td></td>
+          <td>076-8899900</td>
+        </tr>
+        <tr>
+          <td>Ashdod אשדוד</td>
+          <td>Ba'alei HaMelacha St 4, Ashdod</td>
+          <td></td>
+          <td>08-8528346</td>
+        </tr>
+        <tr>
+          <td>Bnei Brak בני ברק</td>
+          <td>HaKishon St 11, Bnei Brak</td>
+          <td></td>
+          <td>03-6168582</td>
+        </tr>
+        <tr>
+          <td>Rishon LeTsiyon ראשון לציון</td>
+          <td>Etsel St 24, Rishon LeTsiyon</td>
+          <td></td>
+          <td>076-8899925</td>
+        </tr>
+        <tr>
+          <td>Netanya נתניה</td>
+          <td>Tom Lantos Blvd. 60, Netanya</td>
+          <td></td>
+          <td>076-8899920</td>
+        </tr>
+        <tr>
+          <td>Haifa חיפה</td>
+          <td>Osher Ad Haifa, 752, Haifa</td>
+          <td></td>
+          <td>076-8899930</td>
+        </tr>
+        <tr>
+          <td>Kiryat Bialik קריית ביאליק</td>
+          <td>Hans Moler St 6, Kiryat Bialik</td>
+          <td></td>
+          <td>04-6890977</td>
+        </tr>
+        <tr>
+          <td>Migdal HaEmek מגדל העמק</td>
+          <td>Haitstadyon St 7, Migdal HaEmek</td>
+          <td></td>
+          <td>04-6546471</td>
+        </tr>
+        <tr>
+          <td>Nof HaGalil נוף הגליל</td>
+          <td>Gilboa St 1, Nof HaGalil</td>
+          <td></td>
+          <td>076-8899910</td>
+        </tr>
+        <tr>
+          <td>Ashkelon - Bat Hadar אשקלון</td>
+          <td>Shvil ha Hadarim Bat Hadar</td>
+          <td></td>
+          <td>08-8668530</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <br> 
+
+
+  <div class="container" id="branches">
+   
+    <div class="map-responsive" id="map">
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1M6guxRsYx38IGEV23vkmD9Erw3S49j-n" width="900"
+        height="900" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+
+  <div class="container" id="about">
+    <P class="lead">As you may know, Osher ad is a chain of supermakets in Israel.
+      There are 19 different locations throughout the country. Unfortunately, thier official website is a single page
+      with no specific infomration and there is no delivery service (unlike it's competitors).
+      Thankfully, the prices are reasonable overall and the anglo clientele will be happy that they carry some Kirkland
+      products (Costco's Private Label).
+      Lastly, the owners of Osher Ad built a new chain of stores in the ultra-orthodox community of new york called
+      Bingo. </P>
+
+    <p>Not associated with Osher Ad - this site is work in progress. The site is open sourced and waiting for your
+      contributions including SEO, UI, UX, localization, and improving information. </p>
+    </p>
+  </div>
+
+  <div class="container" id="social">
+    <P>Follow our telegram group - <a href="https://t.me/osheradnews" target="_blank">Osher Ad Group קבוצת טלגרם של אושר עד</a></P>
+  </div>
+
+
+  <footer class="container center">
+    <iframe src="https://ghbtns.com/github-btn.html?user=avipars&repo=OsherAd&type=star&count=true&size=large"
+      frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+    <br>
+    <p>&copy; Copyright 2021 <a href="https://www.aviparshan.com/israeldeals/index.html" target="_blank">IsraelDeals</a>
+    </p>
+  </footer>
+</body>
+
 </html>

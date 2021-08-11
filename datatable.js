@@ -6,4 +6,12 @@ $(document).ready(function() {
             search: "חיפוש - Search:"
         }
     });
+    // $("table[id*='Table']").DataTable({
+    //     "paging": false,
+    //     select: true,
+    //     responsive: true,
+    //     language: {
+    //         search: "חיפוש - Search:"
+    //     }
+    // });
 });

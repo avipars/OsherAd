@@ -28,6 +28,19 @@
     <noscript>
         <img src="https://avigit.goatcounter.com/count?p=/oa-home">
     </noscript>
+
+    <script>
+        window.goatcounter = {
+            no_onload: true
+        }
+
+        window.addEventListener('hashchange', function(e) {
+            window.goatcounter.count({
+                path: location.pathname + location.search + location.hash,
+            })
+        })
+    </script>
+
     <h1 class="p-4 mb-0 center-dt">Osher Ad אושר עד</h1>
     <p class="border-bottom center">All the locations/branches of Osher Ad in Israel - כל הסניפים של אושר עד בארץ</p>
 

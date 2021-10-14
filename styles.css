@@ -1,6 +1,8 @@
 body {
     font: system-ui, sans-serif;
     font-size: 14px;
+    min-height: 300px;
+    min-width: 300px;
 }
 
 .row-full-height {

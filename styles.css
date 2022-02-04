@@ -89,3 +89,21 @@ body {
 .english {
     direction: ltr;
 }
+
+
+/* container span */
+
+.logo-cont {
+    text-align: center;
+    display: block;
+}
+
+
+/* image itself */
+
+#logo {
+    object-fit: contain;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

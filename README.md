@@ -10,10 +10,13 @@ https://avipars.github.io/OsherAd/index.html
 Osher Ad Telegram Group - 
 https://t.me/osheradnews
 
+Osher Ad Subreddit - 
+https://www.reddit.com/r/OsherAd/
+
 Google My Places - 
 https://www.google.com/maps/d/viewer?mid=1M6guxRsYx38IGEV23vkmD9Erw3S49j-n&usp=sharing 
 
-and support us by joining -  https://www.facebook.com/groups/shopisrael or https://www.aviparshan.com/israeldeals/index.html?utm_source=oagit
+and support me by joining -  https://www.facebook.com/groups/shopisrael or https://www.aviparshan.com/israeldeals/index.html?utm_source=oagit
 
 ![image](https://user-images.githubusercontent.com/5733247/120187917-2033b880-c21e-11eb-9f19-78d8852e5dee.png)
 

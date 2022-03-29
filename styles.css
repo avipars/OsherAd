@@ -7,6 +7,7 @@ body {
     font-size: 14px;
     min-height: 300px;
     min-width: 300px;
+    background-color: #189BD6;
 }
 
 .row-full-height {
@@ -16,7 +17,7 @@ body {
 .map {
     width: 100%;
     height: 100%;
-    background-color: #B4D9FB;
+    background-color: #189BD6;
 }
 
 .thumbnail {
@@ -43,6 +44,27 @@ body {
         width: 50%;
         padding: 10px;
     }
+}
+
+#footer {
+    /* position: fixed; */
+    /* 
+    
+    height: 50px; */
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #189BD6;
+    color: white;
+    /* color: white;
+    text-align: center;
+    padding-top: 10px; */
+    /* change link color to white too! */
+    width: 100%;
+    bottom: 0;
+}
+
+#footer a {
+    color: white;
 }
 
 

@@ -7,7 +7,6 @@ body {
     font-size: 14px;
     min-height: 300px;
     min-width: 300px;
-    background-color: #189BD6;
 }
 
 .row-full-height {
@@ -132,4 +131,26 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}
+
+div.panel.show {
+    display: block;
 }

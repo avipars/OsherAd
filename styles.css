@@ -15,24 +15,12 @@ body {
 
 .hidden {
     display: none;
-    /* background: blue; */
-    /* center */
     text-align: center;
 }
 
 .hidden div {
     margin: 10px;
     background: white;
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.table td {
-    border: 1px solid rgb(250, 250, 250);
-    padding: .5rem 1rem;
 }
 
 .map {
@@ -161,26 +149,4 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-}
-
-button.accordion {
-    background-color: #eee;
-    color: #444;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-button.accordion.active,
-button.accordion:hover {
-    background-color: #ddd;
-}
-
-div.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-}
-
-div.panel.show {
-    display: block;
 }

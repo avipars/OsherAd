@@ -1,14 +1,19 @@
 $(document).ready(function() {
-    // $('#locationTable').DataTable({
-    //     "paging": false,
-    //     select: true,
-    //     language: {
-    //         search: "חיפוש - Search:"
-    //     }
-    // });
-    const d = new Date();
-    let hour = d.getHours();
-    let minute = d.getMinutes();
+
+    //show clock - TODO live check store times, add link to maps, etc...
+    // var time = document.getElementById('time');
+    // //update every 5 minutes - run first time 
+    // var d = new Date();
+    // let hour = d.getHours();
+    // let minute = d.getMinutes();
+    // time.innerHTML = hour + ":" + minute;
+
+    // setInterval(function() {
+    //     d = new Date();
+    //     hour = d.getHours();
+    //     minute = d.getMinutes();
+    //     time.innerHTML = hour + ":" + minute;
+    // }, 300000);
 
 
     console.log("Contribute to our project https://github.com/avipars/OsherAd");
@@ -44,7 +49,43 @@ $(document).ready(function() {
     }
 
     //only toggle hours for the current clicked on branch
-    $("#locationTable tr").click(function() {
+    //ignore the table header 
+    $("#locationTable tbody > tr").click(function() {
         $(this).closest("tr").next(".hidden").toggle();
     });
+
+    //scroll to where the user anchor is 
+    var hash = window.location.hash;
+    if (hash) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800);
+    }
+
 });
+
+//search for branches 
+function search() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("locationTable");
+    tr = table.getElementsByTagName("tr");
+    //also check description and phone fields 
+
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 1; i < tr.length; ++i) {
+        td = tr[i] //search via all the fields
+            //.getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none"; //hidden 
+            }
+        }
+    }
+}

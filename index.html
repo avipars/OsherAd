@@ -36,7 +36,7 @@
     <span class="logo-cont">
         <img src="icons/logo.png" alt="Osher Ad  לוגו של אושר עד Logo" id="logo" unselectable="on" />
     </span>
-    <p class="border-bottom center text-center">All the branches of Osher Ad in Israel - כל הסניפים של אושר עד בארץ</p>
+    <p class="border-bottom center text-center">Osher Ad - אושר עד </p>
     <br/>
 
     <div class="container" id="about">
@@ -65,32 +65,30 @@
         <p class="lead text-right">הצטרפו ל <a href="https://www.aviparshan.com/israeldeals/index.html?utm_source=oaheb" target="_blank">קבוצת מבצעים שלנו</a></p>
     </div>
 
-    <div class="container" id="branches">
-        <h2>
-            <small class="text-muted">On the Map - על מפה</small>
-        </h2>
-
-        <div class="map-responsive" id="map">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1M6guxRsYx38IGEV23vkmD9Erw3S49j-n" width="900" height="900" style="border:0;" allowfullscreen="no" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-    </div>
+    <br />
 
     <div class="container" id="locations">
         <h2>
             <small class="text-muted">Branches - סניפים</small>
         </h2>
-        <p class="lead">All branches are closed on Shabbat in addition to the Jewish holidays. כל הסניפים סגורים בשבת וחגים </p>
+        <p class="lead">Click on a row to reveal the branch hours, and use the search box to narrow down the results. </p>
+        <p class="lead">יש ללחוץ על השורה כדי לדעת את שעות פעילות של הסניף. בנוסף, יש שורת חיפוש כדי למצוא את הסניף שלכם! </p>
+
+        <!-- <p id="time" class="center">Current time: </p> -->
+
+        <input type="text" id="myInput" onkeyup="search()" placeholder="חיפוש - Search:">
+
         <table id="locationTable" class="table table-bordered display" style="width:100%">
-            <thead>
+            <thead class="header">
                 <tr>
-                    <th>Branch Name סניף שם</th>
+                    <th>Branch סניף</th>
                     <th>Location כתובת</th>
-                    <th>Description מידע נוסף</th>
+                    <th>information מידע</th>
                     <th>Phone טלפון</th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="header">
+                <tr class="loc">
                     <td>Ashdod אשדוד</td>
                     <td>Ba'alei HaMelacha St 4, Ashdod</td>
                     <td>דרום</td>
@@ -107,13 +105,13 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Ashkelon - Bat Hadar אשקלון</td>
                     <td>Shvil ha Hadarim, Bat Hadar</td>
                     <td>בת הדר. דרום</td>
                     <td>08-8668530</td>
                 </tr>
-                <tr class="hidden times" id="ashdod">
+                <tr class="hidden times" id="ashkelon">
                     <td colspan="4">
                         <div class="hours">
                             <p>א', ב', ג', 9:00 - 22:00 Sunday, Monday, Tuesday</p>
@@ -124,7 +122,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Be'er Sheva באר שבע</td>
                     <td>Ha-Kotser St 15, Be'er Sheva</td>
                     <td>דרום</td>
@@ -141,7 +139,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Bet Shemesh בית שמש</td>
                     <td>Naimi Mall, HaGalil St 1, Bet Shemesh</td>
                     <td>Within the Naimi mall, take the elevator to get to the store
@@ -159,7 +157,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Bnei Brak בני ברק</td>
                     <td>HaKishon St 11, Bnei Brak</td>
                     <td>מרכז</td>
@@ -175,25 +173,24 @@
                         </div>
                     </td>
                 </tr>
-                <tr class="header">
+                <tr class="loc">
                     <td>Jerusalem - Givat Shaul גבעת שאול</td>
                     <td>Beit Ha-Defus St 29, Jerusalem</td>
-                    <td>One of the original branches - has a lot of American products</td>
+                    <td>One of the original branches</td>
                     <td>02-6511900</td>
                 </tr>
                 <tr class="hidden times" id="givatshaul">
                     <td colspan="4">
                         <div class="hours">
                             <p>א', ב', ג', 10:00 - 23:00 Sunday, Monday, Tuesday</p>
-                            <p>ד', ה', 10:00 - 24:00 ה Wednesday, Thursday</p>
+                            <p>ד', ה', 10:00 - 24:00 Wednesday, Thursday</p>
                             <p>ו', שעון חורף 07:30 - 13:00 Friday - Winter Hours</p>
                             <p>ו', שעון קיץ 07:30 - 15:00 Friday - Summer Hours</p>
                         </div>
                     </td>
                 </tr>
 
-
-                <tr class="header">
+                <tr class="loc">
                     <td>Hadera חדרה</td>
                     <td>פינת, האומן פינת, HaMasger St 22, Hadera</td>
                     <td>שרון</td>
@@ -203,14 +200,14 @@
                     <td colspan="4">
                         <div class="hours">
                             <p>א', ב', ג', 10:00 - 23:00 Sunday, Monday, Tuesday</p>
-                            <p>ד', ה', 10:00 - 24:00 ה Wednesday, Thursday</p>
+                            <p>ד', ה', 10:00 - 24:00 Wednesday, Thursday</p>
                             <p>ו', שעון חורף 07:30 - 13:00 Friday - Winter Hours</p>
                             <p>ו', שעון קיץ 07:30 - 15:00 Friday - Summer Hours</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Haifa חיפה</td>
                     <td>Osher Ad Haifa, 752, Haifa</td>
                     <td>צפון</td>
@@ -228,7 +225,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Gedera - Kanot גדרה - כנות</td>
                     <td>Adom St 24, Gedera</td>
                     <td>דרום</td>
@@ -245,7 +242,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Kfar Saba כפר סבא</td>
                     <td>דרך הים 1, כפר סבא</td>
                     <td>Opening soon - הפתיחה בקרוב .מרכז</td>
@@ -262,7 +259,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Lod לוד</td>
                     <td>Bat Sheva St 1, Lod</td>
                     <td>מרכז</td>
@@ -279,7 +276,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Migdal HaEmek מגדל העמק</td>
                     <td>Haitstadyon St 7, Migdal HaEmek</td>
                     <td>צפון</td>
@@ -296,7 +293,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Nof HaGalil נוף הגליל</td>
                     <td>Gilboa St 1, Nof HaGalil</td>
                     <td>נצרת עילית - Nazareth Ellit צפון</td>
@@ -313,7 +310,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Netanya נתניה</td>
                     <td>Tom Lantos Blvd. 60, Netanya</td>
                     <td>שרון</td>
@@ -330,7 +327,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Petach Tikva - Segula פתח תקווה</td>
                     <td>Ben Tsiyon Galis St 30, Petah Tikva</td>
                     <td>מרכז</td>
@@ -347,7 +344,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Kiryat Bialik קריית ביאליק</td>
                     <td>Hans Moler St 6, Kiryat Bialik</td>
                     <td>North - Near Haifa צפון</td>
@@ -364,7 +361,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Rishon LeTsiyon ראשון לציון</td>
                     <td>Etsel St 24, Rishon LeTsiyon</td>
                     <td>One of the better branches in terms of cleanliness. מרכז</td>
@@ -381,7 +378,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Jerusalem - Romema רוממה</td>
                     <td>Shamgar St 16, Jerusalem</td>
                     <td>Below the shamgar mall - has a lot of American products. ירושלים</td>
@@ -399,7 +396,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Tel Aviv תל אביב</td>
                     <td>Walter Moses St 6, Tel Aviv-Yafo</td>
                     <td>כניסה מרח' וולטר מוזס 1 - Entrance at Walter Moses 1. מרכז</td>
@@ -416,7 +413,7 @@
                     </td>
                 </tr>
 
-                <tr class="header">
+                <tr class="loc">
                     <td>Jerusalem - Talpiot תלפיות</td>
                     <td>Ha-Rekhavim St 8, Jerusalem</td>
                     <td>At the back of the mall - Bottom Floor Hadar Mall קניון הדר - ירושלים</td>
@@ -434,7 +431,20 @@
                 </tr>
             </tbody>
         </table>
+        <p class="lead">All branches are closed on Shabbat in addition to the Jewish holidays. כל הסניפים סגורים בשבת וחגים</p>
     </div>
+    <br />
+
+    <div class="container" id="branches">
+        <h2>
+            <small class="text-muted">On the Map - על מפה</small>
+        </h2>
+
+        <div class="map-responsive" id="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1M6guxRsYx38IGEV23vkmD9Erw3S49j-n" width="900" height="900" style="border:0;" allowfullscreen="no" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
     <br />
 
     <footer class="container center" id="footer">
@@ -450,7 +460,6 @@
             </p>
             <!-- <a href="https://github.com/avipars/OsherAd" target="_blank">Open Source</a>
             <br> -->
-
         </div>
 
     </footer>

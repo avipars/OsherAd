@@ -13,6 +13,28 @@ body {
     height: 100vh;
 }
 
+.hidden {
+    display: none;
+    /* background: blue; */
+    /* center */
+    text-align: center;
+}
+
+.hidden div {
+    margin: 10px;
+    background: white;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    border: 1px solid rgb(250, 250, 250);
+    padding: .5rem 1rem;
+}
+
 .map {
     width: 100%;
     height: 100%;
@@ -43,6 +65,10 @@ body {
         width: 50%;
         padding: 10px;
     }
+}
+
+.today {
+    color: #189BD6;
 }
 
 #footer {
@@ -105,6 +131,18 @@ body {
 
 .english {
     direction: ltr;
+}
+
+.extra-info {
+    display: none;
+}
+
+.info {
+    display: none;
+}
+
+.visible {
+    display: inline-block;
 }
 
 

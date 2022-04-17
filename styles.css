@@ -46,24 +46,16 @@ body {
 }
 
 #footer {
-    /* position: fixed; */
-    /* 
-    
-    height: 50px; */
     padding: 15px auto;
     border-radius: 4px;
-    background-color: #189BD6;
-    color: white;
-    /* color: white;
     text-align: center;
-    padding-top: 10px; */
-    /* change link color to white too! */
+    padding-top: 10px;
     width: 100%;
     bottom: 0;
 }
 
 #footer a {
-    color: white;
+    color: #189BD6;
 }
 
 

@@ -1,25 +1,10 @@
+//Copyright 2021 - 2022 AmCan Tech
 $(document).ready(function() {
-
-    //show clock - TODO live check store times, add link to maps, etc...
-    // var time = document.getElementById('time');
-    // //update every 5 minutes - run first time 
-    // var d = new Date();
-    // let hour = d.getHours();
-    // let minute = d.getMinutes();
-    // time.innerHTML = hour + ":" + minute;
-
-    // setInterval(function() {
-    //     d = new Date();
-    //     hour = d.getHours();
-    //     minute = d.getMinutes();
-    //     time.innerHTML = hour + ":" + minute;
-    // }, 300000);
-
     console.log("Contribute to our project https://github.com/avipars/OsherAd");
     console.log("we are on telegram too " + "https://t.me/osheradnews");
 
     var dayOfWeek = new Date().getDay();
-    var num = -1; //select which P to show
+    var num = -1; //select which P to highlight
 
     if (dayOfWeek >= 0 && dayOfWeek <= 3) { //sunday through tuesday
         num = 0;
@@ -85,7 +70,7 @@ function search() {
         td = tr[i] //search via all the fields
             //.getElementsByTagName("td")[0];
         if (td) {
-            txtValue = td.textContent || td.innerText;
+            txtValue = td.textContent || td.innerText; //search based on how the table was written in html
 
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 tr[i].style.display = "";

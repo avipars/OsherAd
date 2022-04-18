@@ -5,41 +5,41 @@
     <meta charset="UTF-8" />
     <title>Osher Ad Branches סניפים של אושר עד - All the locations in Israel</title>
     <meta name="robots" content="index, follow">
-    <meta name="description" content="The website of Osher Ad סניפים של אושר עד- we provide you information about all the branches throughout the country. מידע על רשת אושר עד כולל סניפים , כתובות ומספרי טלפון ">
+    <meta name="description" content="Branches of Osher Ad סניפים של אושר עד - we provide you information about all the branches throughout the country. מידע על רשת אושר עד כולל סניפים , כתובות ומספרי טלפון ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="icons/mainpreview.jpg" />
+    <meta property="og:image" content="https://avipars.github.io/OsherAd/icons/mainpreview.jpg" />
     <meta property="og:title" content="Osher Ad Branches סניפים של אושר עד - all the locations in Israel" />
-    <meta property="og:description" content="The website of Osher Ad סניפים של אושר עד- we provide you information about all the branches throughout the country. " />
-    <link rel="stylesheet" href="styles.css">
+    <meta property="og:description" content="Branches of  Osher Ad סניפים של אושר עד - we provide you information about all the branches throughout the country. " />
+    <link rel="stylesheet" href="https://avipars.github.io/OsherAd/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="datatable.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css"> -->
+    <script type="text/javascript" charset="utf8" src="https://avipars.github.io/OsherAd/script.js"></script>
 
-    <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-    <link rel="manifest" href="icons/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://avipars.github.io/OsherAd/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://avipars.github.io/OsherAd/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://avipars.github.io/OsherAd/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://avipars.github.io/OsherAd/icons/site.webmanifest">
 
     <script data-goatcounter="https://avigit.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 
 <body>
-    <!-- analytics -->
-    <noscript>
-        <img src="https://avigit.goatcounter.com/count?p=/oa-home">
-    </noscript>
 
-    <!-- <h1 class="p-4 mb-0 center-dt text-center">Osher Ad אושר עד</h1> -->
     <span class="logo-cont">
-        <img src="icons/logo.png" alt="Not Osher Ad לא אושר עד" id="logo" unselectable="on" />
+        <!-- <img src="icons/nosher.png" alt="Not Osher Ad לא אושר עד" id="logo" unselectable="on" /> -->
+        <img src="https://avipars.github.io/OsherAd/icons/logo.svg" alt="Not Osher Ad לא אושר עד" id="logo" unselectable="on" />
+
     </span>
-    <!-- <p class="border-bottom center text-center">Osher Ad - אושר עד </p> -->
     <br/>
 
     <div class="container" id="about">
+
+        <noscript>
+            <img src="https://avigit.goatcounter.com/count?p=/oa-home">
+            <div class="alert alert-danger" role="alert">
+                Please enable Javascript to render the map and the table properly.
+              </div>
+        </noscript>
 
         <div class="alert alert-primary" role="alert">For updates and news about all the branches <a href="https://t.me/osheradnews" class="alert-link" rel="nofollow" target="_blank">לחצו כאן Click Here </a> לגבי עדכונים ושעות פתוחות בכל הסניפים</div>
 
@@ -87,8 +87,6 @@
 
         </div>
 
-        <!-- <p id="time" class="center">Current time: </p> -->
-
         <input type="text" id="myInput" onkeyup="search()" placeholder="חיפוש - Search:">
 
         <table id="locationTable" class="table table-bordered display" style="width:100%">
@@ -109,6 +107,7 @@
                 </tr>
                 <tr class="hidden times" id="ashdod">
                     <td colspan="4">
+                        <!-- hidden table row with hours for each branch, takes full size of the row -->
                         <div class="hours">
                             <p>א', ב', ג', 10:00 - 23:00 Sunday, Monday, Tuesday</p>
                             <p>ד', ה', 10:00 - 24:00 Wednesday, Thursday</p>
@@ -397,7 +396,6 @@
                     <td>Below the shamgar mall - ירושלים</td>
                     <td>076-8845535</td>
                 </tr>
-                <!-- hidden table row with hours for each branch -->
                 <tr class="hidden times" id="romema">
                     <td colspan="4">
                         <div class="hours">

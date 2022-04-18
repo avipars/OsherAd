@@ -15,9 +15,9 @@ $(document).ready(function() {
     //     time.innerHTML = hour + ":" + minute;
     // }, 300000);
 
-
     console.log("Contribute to our project https://github.com/avipars/OsherAd");
     console.log("we are on telegram too " + "https://t.me/osheradnews");
+
     var dayOfWeek = new Date().getDay();
     var num = -1; //select which P to show
 
@@ -62,6 +62,12 @@ $(document).ready(function() {
         }, 800);
     }
 
+    //hide special hours after they "expire"
+    var day = new Date().getDate();
+    var month = new Date().getMonth() + 1; //1-12 not 0-11
+    if (month >= 4 && day >= 22) {
+        $("#pesachtime").fadeOut();
+    }
 });
 
 //search for branches 

@@ -23,7 +23,7 @@ https://www.google.com/maps/d/viewer?mid=1M6guxRsYx38IGEV23vkmD9Erw3S49j-n&usp=s
 
 and support the project by joining -  https://www.facebook.com/groups/shopisrael or https://www.aviparshan.com/israeldeals/index.html?utm_source=oagit
 
-<!-- ![image](https://user-images.githubusercontent.com/5733247/155274069-b5c75ea3-47b5-488e-8ee8-3c39dcb3bde3.png) -->
+![image](https://user-images.githubusercontent.com/5733247/163798035-b62d1651-3056-458c-8491-93ee2f71f560.png)
 
 לא קשור לאושר עד 
 Not associated with Osher Ad.

@@ -16,4 +16,7 @@ https://www.reddit.com/r/OsherAd/
 Google My Places - 
 https://www.google.com/maps/d/viewer?mid=1M6guxRsYx38IGEV23vkmD9Erw3S49j-n&usp=sharing 
 
-and support me by joining -  https://www.facebook.com/groups/shopisrael or https://www.aviparshan.com/israeldeals/index.html?utm_source=oagit
+and support the project by joining -  https://www.facebook.com/groups/shopisrael or https://www.aviparshan.com/israeldeals/index.html?utm_source=oagit
+
+![image](https://user-images.githubusercontent.com/5733247/163797744-3a03a54d-a0ca-44b6-a260-7e17487ab656.png)
+

@@ -6,12 +6,12 @@ $(document).ready(function() {
     var dayOfWeek = new Date().getDay();
     var num = -1; //select which P to highlight
 
-    if (dayOfWeek >= 0 && dayOfWeek <= 3) { //sunday through tuesday
+    if (dayOfWeek >= 0 && dayOfWeek <= 2) { //sunday through tuesday
         num = 0;
-    } else if (dayOfWeek > 3 && dayOfWeek <= 4) { //wednesday through thursday
+    } else if (dayOfWeek > 2 && dayOfWeek <= 3) { //wednesday through thursday
         num = 1;
         //w,t 
-    } else if (dayOfWeek == 5) { //friday  - check months for summer/winter
+    } else if (dayOfWeek == 4) { //friday  - check months for summer/winter
         var month = new Date().getMonth() + 1; //1-12 not 0-11
         if (month >= 3 && month <= 10) { //summer from march to october
             num = 3;

@@ -1,9 +1,10 @@
 html {
     scroll-behavior: smooth
+
 }
 
 body {
-    font: system-ui, sans-serif;
+    font-family: Arial, sans-serif, system-ui;
     font-size: 14px;
     min-height: 300px;
     min-width: 300px;

@@ -10,7 +10,7 @@ Read about it here -
 https://sales.aviparshan.com/2021/09/osher-ad-deals-location-and-hours-of.html
 
 Live Demo - 
-https://avipars.github.io/OsherAd/index.html
+https://avipars.github.io/OsherAd/
 
 Not Osher Ad Telegram Group - 
 https://t.me/osheradnews
